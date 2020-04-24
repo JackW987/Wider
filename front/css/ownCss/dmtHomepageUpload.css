@@ -1,0 +1,192 @@
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	width: 100%;
+	height: 100%;
+}
+a:hover{
+	text-decoration: none;
+}
+a:focus{
+	text-decoration: none;
+}
+.nav{
+	position: absolute;
+}
+.upload-img-box{
+	width: 100%;
+	height: 100%;
+	padding-top: 60px;
+}
+.opera-banner{
+	width: 340px;
+	height: 100%;
+	padding: 18px 20px 140px;
+    margin-left: auto;
+    font-size: 13px;
+    line-height: 18px;
+    overflow-y: scroll;
+    color: #222;
+    background-color: #fff;
+    position: relative;
+}
+.input-label{
+	font-size: 13px;
+	color: black;
+}
+.input-text-title{
+	width: 100%;
+	height: 40px;
+    padding: 10px;
+    border: 2px solid #e0e0e0;
+    margin: 12px 0 28px;
+    outline: none;
+    font-size: 13px;
+}
+.input-text-work{
+	width: 100%;
+    padding: 10px;
+    border: 2px solid #e0e0e0;
+    margin: 12px 0 28px;
+    outline: 0;
+    font-size: 13px;
+    resize: none;
+    margin-top: 12px;
+    margin-bottom: 28px;
+    height: 208px;
+}
+.label-small-describe{
+	color: #85888a;
+}
+.label-length-count{
+	float: right;
+}
+.tag-store-box{
+	width: 100%;
+    padding: 10px;
+    border: 2px solid #e0e0e0;
+    margin: 12px 0 28px;
+    outline: none;
+    font-size: 13px;
+    min-height: 40px;
+}
+.tag-item-list{
+	margin:12px auto;
+}
+.tag-item{
+	margin-top: 10px;
+	margin-left: 20px;
+	display: inline-block;
+	line-height: 18px;
+	color: black;
+	font-size: 13px;
+}
+.confirm-btn{
+	background: #efb500;
+	color: white;
+	font-size: 16px;
+	display: block;
+	width: 100%;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	letter-spacing: 10px;
+	color: white;
+	margin-top: 200px;
+}
+.upload-box{
+	position: absolute;
+	right: 340px;
+	left: 0px;
+	top: 60px;
+	bottom: 0px;
+	padding: 22px 30px;
+	overflow-y: auto;
+}
+.photo-list{
+	margin:0px;
+	padding:0px;
+	margin-top: 32px;
+	width: auto;
+}
+.photo-list li{
+	display: inline-block;
+	width: 252px;
+	height: 252px;
+	margin-left: 40px;
+	margin-bottom: 40px;
+	position: relative;
+	float: left;
+}
+.photo-list li img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin:auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+.upload-photo-btn{
+	height: 170px;
+    padding: 47px 0;
+    border: 2px solid #e0e0e0;
+  	margin:41px 0;
+    text-align: center;
+    color: #85888a;
+    box-sizing: border-box;
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+}
+.upload-photo-btn i{
+	font-size: 40px;
+	display: block;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.file-input{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	cursor: pointer;
+}
+.tag-item-selected{
+	margin-top: 10px;
+	margin-left: 20px;
+	display: inline-block;
+	line-height: 18px;
+	color: black;
+	font-size: 13px;
+	border: 1px solid #222;
+    padding: 1px 8px;	
+}
+.tag-item-selected:hover{
+	text-decoration:line-through;
+}
+.li-delete-btn{
+	position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    display: none;
+}
+.li-delete-btn i{
+	font-size: 14px;
+	width: 100%;
+	height: 100%;
+	display: block;
+	line-height: 20px;
+}

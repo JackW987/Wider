@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+	  <script src="js/html5.js"></script>  
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="css/adminCss/adminNav.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css" >
+    <link rel="stylesheet" type="text/css" href="css/adminCss/adminIndexHot.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- 导航样式 -->
+    <div class="admin-top-nav"> 
+      <div class="top-nav-logo">
+        Wider Auth
+      </div>
+      <a href="javascript:void(0);" class="login-out">
+        <i class="glyphicon glyphicon-log-out">
+          
+        </i>
+        <span>
+          退出
+        </span>
+      </a> 
+      <span href="javascript:void(0);" class="remind-msg msg-email">
+        <i class="glyphicon glyphicon-envelope">
+          <span class="remind-msg-bubble">
+            99+
+          </span>
+        </i>
+        <ul class="remind-ul">
+         <li class="admin-operation">
+            <div class="admin-head">
+              <img src="images/head/browse-head-2.jpg">
+            </div>
+            <div class="admin-main-operate">
+              <a href="adminRecord.html">
+                <span class="operate-name">
+                  老李头
+                </span>
+                <span class="operate-text">
+                  删除了名为“西风野马”的图文内容
+                </span>
+                <span class="operate-time">
+                  2017-09-08 下午 14:52
+                </span>
+              </a>
+            </div>
+         </li> 
+         <li class="admin-operation">
+            <div class="admin-head">
+                <img src="images/head/browse-head-1.jpg">
+              </div>
+              <div class="admin-main-operate">
+                <a href="adminRecord.html">
+                  <span class="operate-name">
+                    管理员
+                  </span>
+                  <span class="operate-text">
+                    删除了名为“我在北边看到你”的影像内容
+                  </span>
+                  <span class="operate-time">
+                    2017-09-08 下午 14:52
+                  </span>
+                </a>   
+              </div>
+         </li>
+         <li class="enter-list">
+          <a href="adminRecord.html">
+            <i class="glyphicon glyphicon-cog"></i>
+              进入列表
+          </a>
+         </li>
+        </ul>
+      </span>
+      <span href="javascript:void(0);" class="remind-msg msg-bell">
+        <i class="glyphicon glyphicon-bell">
+          <span class="remind-msg-bubble add-green">
+            99+
+          </span>
+        </i>
+        <ul class="remind-ul">
+         <li class="web-msg">
+           <a href="adminHomepage.html">
+            <i class="glyphicon glyphicon-cloud-upload"></i>
+             最新访问量数据已经更新
+             <span>
+               30分钟前
+             </span>  
+           </a>   
+         </li> 
+         <li class="web-msg">
+          <a href="adminReport.html">
+            <i class="glyphicon glyphicon-info-sign"></i>
+             有新的举报内容
+             <span>
+               30分钟前
+             </span>
+          </a> 
+         </li>
+         <li class="web-msg">
+          <a href="adminHomepage.html">
+            <i class="glyphicon glyphicon-fire"></i>
+             月最佳员工数据更新
+             <span>
+               30分钟前
+             </span>
+          </a> 
+         </li>
+        </ul>
+      </span>
+      <span class="welcome-msg">
+        欢迎你,管理员
+      </span>
+    </div>
+    <div class="admin-left-nav">
+      <div class="left-nav-head">
+        <div class="head-picture">
+          <img src="images/head/browse-head-1.jpg" alt="head-1"> 
+        </div>
+        <span class="head-msg">
+          <i class="glyphicon glyphicon-unchecked"></i>
+          普通管理员
+        </span>
+      </div>
+      <ul class="main-menu">
+        <li>
+          <a href="adminHomepage.html">
+            <i class="glyphicon glyphicon-home"></i>
+            <span>首页</span>
+          </a> 
+        </li>
+        <li class="nav-user-btn-active user" style="height:135px;">
+          <a href="javascript:void(0);">
+            <i class="glyphicon glyphicon-list-alt"></i>
+            <span>主页</span>
+            <i class="glyphicon glyphicon-minus"></i>
+          </a>
+          <ul>
+            <li>
+              <a href="adminIndexHot.html" class="nav-active">
+                热门内容更换
+              </a>
+            </li>
+            <li>
+              <a href="adminIndexTag.html">
+                专题内容管理
+              </a>
+            </li>
+          </ul> 
+        </li>
+        <li class="user">
+          <a href="adminImgTxt.html">
+            <i class="glyphicon glyphicon-tasks"></i>
+            <span>图文</span>
+          </a>  
+        </li>
+        <li class="user">
+          <a href="adminImg.html">
+            <i class="glyphicon glyphicon-picture"></i>
+            <span>影像</span>
+          </a>
+        </li>
+        <li class="user">
+          <a href="adminSpecial.html">
+            <i class="glyphicon glyphicon-th-list"></i>
+            <span>专题</span>
+          </a> 
+        </li>
+        <li class="user">
+          <a href="adminLabel.html">
+            <i class="glyphicon glyphicon-tags"></i>
+            <span>标签</span>
+          </a> 
+        </li>
+        <li class="user">
+          <a href="adminUser.html">
+            <i class="glyphicon glyphicon-user"></i>
+            <span>用户</span>
+          </a> 
+        </li>
+        <li>
+          <a href="adminRecord.html">
+            <i class="glyphicon glyphicon-file"></i>
+            <span>记录</span>
+          </a>
+        </li>
+        <li>
+          <a href="adminReport.html">
+            <i class="glyphicon glyphicon-warning-sign"></i>
+            <span>举报</span>
+          </a> 
+        </li>
+      </ul>
+    </div>
+    <!-- 热门更换 -->
+    <div class="container">
+      <div class="box-container-hot col-sm-12">
+        <div class="title">
+          首页展示内容
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>热度排名</th>
+              <th>点赞数</th>
+              <th>标题</th>
+              <th>种类</th>
+              <th>作者</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="hot-active-1">
+              <td>1</td>
+              <td>345</td>
+              <td>千山万湖一杯茶</td>
+              <td>图文</td>
+              <td>Striver</td>
+              <td>
+                <button type="button" data-target="#imgTxtBox" data-toggle="modal" class="btn btn-info btn-sm">
+                  浏览
+                </button>
+                <button type="button" class="btn btn-danger btn-sm off-shelf-btn">
+                  下架
+                </button>
+              </td>
+            </tr>
+            <tr class="hot-active-5">
+              <td>5</td>
+              <td>200</td>
+              <td>惊蛰未见</td>
+              <td>图文</td>
+              <td>一指无眠</td>
+              <td>
+                <button type="button" data-target="#imgTxtBox" data-toggle="modal"  class="btn btn-info btn-sm">
+                  浏览
+                </button>
+                <button type="button" class="btn btn-danger btn-sm off-shelf-btn">
+                  下架
+                </button>
+              </td>
+            </tr>
+            <tr class="hot-active-18">
+              <td>18</td>
+              <td>102</td>
+              <td>康桥游记</td>
+              <td>图文</td>
+              <td>笔落惊风雨</td>
+              <td>
+                <button type="button" data-target="#imgTxtBox" data-toggle="modal" class="btn btn-info btn-sm">
+                  浏览
+                </button>
+                <button type="button" class="btn btn-danger btn-sm off-shelf-btn">
+                  下架
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="container">
+      <div class="box-container-prehot col-sm-12">
+        <table class="table">
+          <div class="title">
+            可更换内容（热门前20）
+          </div>
+          <thead>
+            <tr>
+              <th>热度排名</th>
+              <th>点赞数</th>
+              <th>标题</th>
+              <th>种类</th>
+              <th>作者</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="success hot-active-1">
+              <td>1</td>
+              <td>345</td>
+              <td>千山万湖一杯茶</td>
+              <td>图文</td>
+              <td>Striver</td>
+              <td>
+                <button type="button" data-target="#imgTxtBox" data-toggle="modal" class="btn btn-info btn-sm">
+                  浏览
+                </button>
+                <button type="button" class="btn btn-success btn-sm up-shelf-btn" disabled="disabled">
+                  上架
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>310</td>
+              <td>镜像</td>
+              <td>图文</td>
+              <td>冯晏</td>
+              <td>
+                <button type="button" data-target="#imgTxtBox" data-toggle="modal" class="btn btn-info btn-sm">
+                  浏览
+                </button>
+                <button type="button" class="btn btn-success btn-sm up-shelf-btn">
+                  上架
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>295</td>
+              <td>四书集注</td>
+              <td>图文</td>
+              <td>朱熹</td>
+              <td>
+                <button type="button" data-target="#imgTxtBox" data-toggle="modal" class="btn btn-info btn-sm">
+                  浏览
+                </button>
+                <button type="button" class="btn btn-success btn-sm up-shelf-btn">
+                  上架
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>285</td>
+              <td>禁果</td>
+              <td>影集</td>
+              <td>一丁光影</td>
+              <td>
+                <button type="button" data-target="#imgBox" data-toggle="modal" class="btn btn-info btn-sm">
+                  浏览
+                </button>
+                <button type="button" class="btn btn-success btn-sm up-shelf-btn">
+                  上架
+                </button>
+              </td>
+            </tr>
+            <tr class="success hot-active-5">
+              <td>5</td>
+              <td>200</td>
+              <td>惊蛰未见</td>
+              <td>图文</td>
+              <td>一指无眠</td>
+              <td>
+                <button type="button" data-target="#imgTxtBox" data-toggle="modal" class="btn btn-info btn-sm">
+                  浏览
+                </button>
+                <button type="button" class="btn btn-success btn-sm up-shelf-btn" disabled="disabled">
+                  上架
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>196</td>
+              <td>十里杏花</td>
+              <td>影集</td>
+              <td>燃烧四弦</td>
+              <td>
+                <button type="button" data-target="#imgBox" data-toggle="modal" class="btn btn-info btn-sm">
+                  浏览
+                </button>
+                <button type="button" class="btn btn-success btn-sm up-shelf-btn">
+                  上架
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>190</td>
+              <td>三彩</td>
+              <td>影集</td>
+              <td>北极映画</td>
+              <td>
+                <button type="button" data-target="#imgBox" data-toggle="modal" class="btn btn-info btn-sm">
+                  浏览
+                </button>
+                <button type="button" class="btn btn-success btn-sm up-shelf-btn">
+                  上架
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>190</td>
+              <td>dear</td>
+              <td>影集</td>
+              <td>ksharpxqter</td>
+              <td>
+                <button type="button" data-target="#imgBox" data-toggle="modal" class="btn btn-info btn-sm">
+                  浏览
+                </button>
+                <button type="button" class="btn btn-success btn-sm up-shelf-btn">
+                  上架
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>180</td>
+              <td>炫舞飞扬</td>
+              <td>影集</td>
+              <td>阿路</td>
+              <td>
+                <button type="button" data-target="#imgBox" data-toggle="modal" class="btn btn-info btn-sm">
+                  浏览
+                </button>
+                <button type="button" class="btn btn-success btn-sm up-shelf-btn">
+                  上架
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>179</td>
+              <td>记录朋友</td>
+              <td>影集</td>
+              <td>程秋铭</td>
+              <td>
+                <button type="button"  data-target="#imgBox" data-toggle="modal" class="btn btn-info btn-sm">
+                  浏览
+                </button>
+                <button type="button" class="btn btn-success btn-sm up-shelf-btn">
+                  上架
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>169</td>
+              <td>Asia and the cat</td>
+              <td>影集</td>
+              <td>Iwona_Podlasinska</td>
+              <td>
+                <button type="button" data-target="#imgBox" data-toggle="modal" class="btn btn-info btn-sm">
+                  浏览
+                </button>
+                <button type="button" class="btn btn-success btn-sm up-shelf-btn">
+                  上架
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>159</td>
+              <td>想和你约会</td>
+              <td>影集</td>
+              <td>Daddy_Hayens</td>
+              <td>
+                <button type="button" data-target="#imgBox" data-toggle="modal" class="btn btn-info btn-sm">
+                  浏览
+                </button>
+                <button type="button" class="btn btn-success btn-sm up-shelf-btn">
+                  上架
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>152</td>
+              <td>小悠悠</td>
+              <td>影集</td>
+              <td>扬紫_Ococr</td>
+              <td>
+                <button type="button"  data-target="#imgBox" data-toggle="modal" class="btn btn-info btn-sm">
+                  浏览
+                </button>
+                <button type="button" class="btn btn-success btn-sm up-shelf-btn">
+                  上架
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td>143</td>
+              <td>《软妹子》</td>
+              <td>影集</td>
+              <td>Daddy_Hayens</td>
+              <td>
+                <button type="button" data-target="#imgBox" data-toggle="modal" class="btn btn-info btn-sm">
+                  浏览
+                </button>
+                <button type="button" class="btn btn-success btn-sm up-shelf-btn">
+                  上架
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>15</td>
+              <td>134</td>
+              <td>coco</td>
+              <td>影集</td>
+              <td>Ray shen</td>
+              <td>
+                <button type="button" data-target="#imgBox" data-toggle="modal"  class="btn btn-info btn-sm">
+                  浏览
+                </button>
+                <button type="button" class="btn btn-success btn-sm up-shelf-btn">
+                  上架
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td>122</td>
+              <td>龙族</td>
+              <td>图文</td>
+              <td>江南</td>
+              <td>
+                <button type="button" data-target="#imgTxtBox" data-toggle="modal" class="btn btn-info btn-sm">
+                  浏览
+                </button>
+                <button type="button" class="btn btn-success btn-sm up-shelf-btn">
+                  上架
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>17</td>
+              <td>118</td>
+              <td>无法无天</td>
+              <td>图文</td>
+              <td>柳暗花明</td>
+              <td>
+                <button type="button" data-target="#imgTxtBox" data-toggle="modal" class="btn btn-info btn-sm">
+                  浏览
+                </button>
+                <button type="button" class="btn btn-success btn-sm up-shelf-btn">
+                  上架
+                </button>
+              </td>
+            </tr>
+            <tr class="success hot-active-18">
+              <td>18</td>
+              <td>102</td>
+              <td>康桥游记</td>
+              <td>图文</td>
+              <td>笔落惊风雨</td>
+              <td>
+                <button type="button" data-target="#imgTxtBox" data-toggle="modal" class="btn btn-info btn-sm">
+                  浏览
+                </button>
+                <button type="button" class="btn btn-success btn-sm up-shelf-btn" disabled="disabled">
+                  上架
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>19</td>
+              <td>95</td>
+              <td>我看了一眼</td>
+              <td>图文</td>
+              <td>手写的从前</td>
+              <td>
+                <button type="button" data-target="#imgTxtBox" data-toggle="modal" class="btn btn-info btn-sm">
+                  浏览
+                </button>
+                <button type="button" class="btn btn-success btn-sm up-shelf-btn">
+                  上架
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>20</td>
+              <td>56</td>
+              <td>爱神的箭</td>
+              <td>图文</td>
+              <td>丘比特</td>
+              <td>
+                <button type="button" data-target="#imgTxtBox" data-toggle="modal" class="btn btn-info btn-sm">
+                  浏览
+                </button>
+                <button type="button" class="btn btn-success btn-sm up-shelf-btn">
+                  上架
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- 详细影像模态框 -->
+
+    <!-- 详细图文模态框 -->
+	<div class="modal fade" id="imgTxtBox" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog imgTxtBoxWidth" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">图文内容</h4>
+	      </div>
+	      <div class="modal-body">
+		   <div class="main-browse">
+	   		<!-- 标题部分 -->
+	   		<h1 class="browse-title">
+	   			面试巧答考官13个问题，总有一个，值得你去借鉴
+	   		</h1>
+	   		<!-- 作者部分 -->
+	   		<div class="browse-author clearfix">
+	   			<a href="javascript:void(0);" class="browse-author-head">
+	   				<img src="images/head/browse-head-1.jpg" alt="browse-head">
+	   			</a>
+	   			<div class="browse-author-info">
+	   				<div class="browse-author-name">
+	   					<span href="javascript:void(0);">
+	   						火火火火火火
+	   					</span>
+	   				</div>
+	   				<div class="browse-author-time">
+	   					<span>
+	   						2017年6月12日
+	   					</span>
+	   					<span>
+	   						评论 0
+	   					</span>
+	   					<span>
+	   						喜欢 0
+	   					</span>
+	   				</div>
+
+	   			</div>
+	   		</div>
+	   		<!-- 文章部分 -->
+	   		<div class="browse-content">
+	   			<p>一战真正开启了现代史的进程</p>
+	   			<p>至今我们仍活在一战的百年遗绪中</p>
+	   			<p>这些在近年来已成为耳熟能详的的共识性新常识，却并不为太多人知道</p>
+	   			<p>那些在一战中发生的深刻影响到其后百年全球政治格局的事件，大多集中出现在 1916 年</p>
+	   			<p>1916 年发生的事件，或者通过影响一战的结局进而影响了其后的历史</p>
+	   			<p>或者当时并未对一战的结果产生决定性影响，然而却对后来的全球政治格局演变产生了意想不到的触发作用。</p>
+	   			<p>也因此，1916 年不仅仅是一战史视域中的分割线，更是全球史视野中的关键年份。</p>
+	   			<p>一战真正开启了现代史的进程</p>
+	   			<p>至今我们仍活在一战的百年遗绪中</p>
+	   			<p>这些在近年来已成为耳熟能详的的共识性新常识，却并不为太多人知道</p>
+	   			<p>那些在一战中发生的深刻影响到其后百年全球政治格局的事件，大多集中出现在 1916 年</p>
+	   			<p>1916 年发生的事件，或者通过影响一战的结局进而影响了其后的历史</p>
+	   			<p>或者当时并未对一战的结果产生决定性影响，然而却对后来的全球政治格局演变产生了意想不到的触发作用。</p>
+	   			<p>也因此，1916 年不仅仅是一战史视域中的分割线，更是全球史视野中的关键年份。</p>
+	   			<p>一战真正开启了现代史的进程</p>
+	   			<p>至今我们仍活在一战的百年遗绪中</p>
+	   			<p>这些在近年来已成为耳熟能详的的共识性新常识，却并不为太多人知道</p>
+	   			<p>那些在一战中发生的深刻影响到其后百年全球政治格局的事件，大多集中出现在 1916 年</p>
+	   			<p>1916 年发生的事件，或者通过影响一战的结局进而影响了其后的历史</p>
+	   			<p>或者当时并未对一战的结果产生决定性影响，然而却对后来的全球政治格局演变产生了意想不到的触发作用。</p>
+	   			<p>也因此，1916 年不仅仅是一战史视域中的分割线，更是全球史视野中的关键年份。</p>
+          <p>
+            <img src="images/img/img-2.jpg">
+          </p>
+	   		</div>
+	   		<div class="browse-foot">
+	   			© 著作权归作者所有
+	   		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</div>
+
+    <!-- 影像详细内容 -->
+    <div class="modal fade" id="imgBox" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog imgBox" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">图集内容</h4>
+          </div>
+          <div class="modal-body">
+            <ul class="show-img-box">
+              <li>
+                <img src="images/img/img-1.jpg" />
+              </li>
+              <li>
+                <img src="images/img/img-2.jpg" />
+              </li>
+              <li>
+                <img src="images/img/img-3.jpg" />
+              </li>
+              <li>
+                <img src="images/img/img-4.jpg" />
+              </li>
+              <li>
+                <img src="images/img/img-5.jpg" />
+              </li>
+              <li>
+                <img src="images/img/img-6.jpg" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="js/plug-ins.js"></script>
+    <script type="text/javascript" src="js/layer-plug/layer.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datetimepicker.fr.js"></script>
+    <script type="text/javascript" src="js/adminJs/adminNav.js"></script>
+    <script type="text/javascript" src="js/adminJs/adminIndexHot.js"></script>
+
+  </body>
+</html>

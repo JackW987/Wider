@@ -1,0 +1,325 @@
+body{
+	padding-bottom: 300px;
+	height: auto;
+}
+.wider-show-person-banner{
+	width: 1000px;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 50px;
+}	
+.person-banner-nav {
+	width: 280px;
+	float: left;
+	padding:0px;
+	margin:0px;
+}
+.person-banner-nav  li{
+	list-style: none;
+	float: left;
+}
+.person-banner-nav li a{
+	display: block;
+	width: 280px;
+	height: 52px;
+	line-height: 52px;
+	color: black;
+	font-size: 15px;
+}
+.person-banner-nav li a i{
+	width: 32px;
+	height: 32px;
+	margin-top: 13px;
+	margin-right: 10px;
+	float: left;
+	display: inline-block;
+	vertical-align: middle;
+	color: black;
+	text-align: center;
+	font-size: 28px;
+	margin-left: 10px;
+}
+.person-banner-mainbox{
+	float: right;
+	width: 720px;
+	background: white;
+	padding:20px;
+	display: none;
+}
+.base-msg-box{
+	display: block;
+}
+.person-banner-mainbox table{
+	width: 100%;	
+}
+.person-banner-mainbox table tr {
+	border-bottom:1px solid #c8c8c8;
+	position: relative;
+}
+.person-banner-mainbox table tr td{
+	padding:20px 0;
+}
+.mainbox-small-title{
+	font-size: 15px;
+	color:black;
+	padding:20px 0;
+	width: 150px;
+}
+.name-input{
+	width: 214px;
+	padding:5px 10px;
+	border:1px solid #c8c8c8;
+	border-radius: 4px;
+	background: hsla(0,0%,71%,.1);
+}
+.email-input{
+	width: 280px;
+	padding:5px 10px;
+	border:1px solid #c8c8c8;
+	border-radius: 4px;
+	background: hsla(0,0%,71%,.1);
+}
+.phone-input{
+	width: 280px;
+	padding:5px 10px;
+	border:1px solid #c8c8c8;
+	border-radius: 4px;
+	background: hsla(0,0%,71%,.1);
+}
+.white-bg{
+	background: white;
+}
+.mainbox-send-msg-btn{
+	font-size:14px;
+	padding:4px 12px;
+	border:1px solid #42c02e;
+	color: #42c02e;
+	border-radius: 15px;
+	text-align: center;
+	right: 0px;
+}
+.right-btn{
+	float: right;
+}
+.mainbox-send-msg-btn:hover{
+	background: #f5fcf3;
+}
+.wantplace-input{
+	width: 100px;
+	padding:5px 10px;
+	border:1px solid #c8c8c8;
+	border-radius: 4px;
+	background: hsla(0,0%,71%,.1);
+}
+.none-border-bottom{
+	border-bottom: none!important;
+}
+.save-msg-btn{
+	width: 100px;
+	height: 30px;
+	border-radius: 15px;
+	text-align: center;
+	line-height: 30px;
+	color:white;
+	background: #42c02e;
+	display: block;
+	margin: 20px 0;
+}
+.person-msg-top span{
+	margin: 0 20px 0 6px;
+}
+textarea {
+	width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+    background-color: hsla(0,0%,71%,.1);
+    display: block;
+    resize: none;
+    outline-style: none;
+}
+.pull-left{
+	float: left!important;
+}
+.love-input{
+	width: 280px;
+	padding: 5px 10px;
+    font-size: 15px;
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+    background-color: hsla(0,0%,71%,.1);
+}
+table input {
+	outline: none;
+}
+.binding-btn{
+	padding:0px;
+	margin:0px;
+	width: 100%;
+}
+.binding-btn li{
+	width: 100%;
+	height: 52px;
+	line-height: 52px;
+}
+.binding-btn li a{
+	display: block;
+	height: 100%;
+	font-size: 14px;
+	color: black;
+	width: auto;
+	float: left;
+	margin-right: 20px;
+}
+.binding-btn li img{
+	width: 28px;
+	height: 28px;
+	margin-right: 20px;
+	display: block;
+	float: left;
+	margin-top: 12px;
+}
+.binded-btn{
+	color: #969696 !important;
+	font-size: 14px;
+}
+.cancel-binded{
+	color: #969696 !important;
+	font-size: 14px;
+}
+.password-input{
+	width: 280px;
+    padding: 5px 10px;
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+    background: hsla(0,0%,71%,.1);
+}
+.change-password-btn{
+	font-size:14px;
+	padding:4px 12px;
+	border: 1px solid #42c02e;
+    color: #42c02e;
+    border-radius: 15px;
+    text-align: center;
+    display: block;
+    float: left;
+}
+/* 展出页面 样式 */
+.other-area div{
+	float: left;
+	margin-right: 10px;
+	font-size: 15px;
+}
+.contact-other{
+	float: left;
+	margin-top: 5px;
+}
+.contact-other-bind{
+	float: left;
+	margin-top: 0px;
+}
+/* 验证码框 */
+.code-box{
+	display: none;
+	width: 420px;
+	height: auto;
+}
+.code-input{
+	width: 100%;
+	padding:20px;
+}
+.code-input-text{
+	width: 100%;
+	padding: 5px 10px;
+    font-size: 15px;
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+    background-color: hsla(0,0%,71%,.1);
+    outline: none;
+}
+.code-input-send{
+	width: 100px;
+    height: 33px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    background: #42c02e;
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.code-input-confirm{
+	width: 100%;
+    height: 33px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 33px;
+    color: white;
+    background: #42c02e;
+    display: block;
+    margin-top: 20px;
+}
+.code-input-send-count{
+	width: 100px;
+    height: 33px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 33px;
+    color: white;
+    background: #42c02e;
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: none;
+}
+/* 修改密码 */
+.password-change-box{
+	display: none;
+	width: 420px;
+	height: auto;
+	padding:20px;
+}
+.password-change-box input{
+	width: 100%;
+    padding: 5px 10px;
+    font-size: 15px;
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+    background-color: hsla(0,0%,71%,.1);
+    outline: none;
+    margin-bottom: 20px;
+}
+.password-change-confirm{
+	width: 100%;
+    height: 33px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 33px;
+    color: white;
+    background: #42c02e;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+.clearfix:before,
+.clearfix:after{
+	content:"";
+	display:table;
+
+}
+.clearfix:after{
+	clear:both;
+}

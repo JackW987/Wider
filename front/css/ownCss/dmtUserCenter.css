@@ -1,0 +1,235 @@
+a:hover{
+	text-decoration: none;
+}
+a:focus{
+	text-decoration: none;
+}
+html{
+	width: 100%;
+}
+body{
+	width: 100%;
+}
+.nav-fixed{
+	position: fixed;
+	top: 0px;
+	z-index: 100;
+}
+/* 最上层内容 */
+.usercenter-head-box{
+	width: 100%;
+	height: 480px;
+	background: url(../../images/usercenter/head/usercenter-bg.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.usercenter-head-box-mask{
+	background:rgba(0,0,0,0.10);
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.user-info{
+	position: absolute;
+	left: 50%;
+	margin-left: -80px;
+	bottom: 15px;
+}
+.user-box{
+	width: 160px;
+	height: 160px;
+	border:4px solid white;
+	border-radius: 50%;
+	margin-bottom: 14px;
+	box-sizing: border-box;
+	position: relative;
+}
+.user-box a{
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background: rgba(0,0,0,0.3);
+	text-align: center;
+	opacity: 0;
+}
+.user-box a i{
+	width: 100%;
+	color: white;
+	font-size: 40px;
+	margin-top: 37px;
+	margin-bottom: 10px;
+}
+.user-box a span{
+	width: 100%;
+	height: 30px;
+	color: white;
+	font-size: 20px;
+}
+.upload-img-box{
+	width: 100%;
+	height: 100%;
+	display: none;
+	padding-top: 10px;
+}
+.upload-img-box div img{
+	width: 100%;
+	height: 100%;
+}
+.user-box-img{
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+}
+.user-detail{
+	width: 100%;
+}
+.user-detail span{
+	width: 100%;
+	height: 100%;
+	line-height: 34px;
+	text-align: center;
+	display: block;
+	color: white;
+	font-size: 22px;
+	letter-spacing: 2px;
+}
+.user-detail span a{
+	width: 20px;
+	height: 20px;	
+	margin-left: 5px;
+	font-size: 22px;
+	margin-bottom: 3px;
+	color: white;
+}
+.user-comment{
+	width: 100%;
+}
+.user-comment a{
+	width: 50%;
+	line-height: 34px;
+	font-size: 15px;
+	text-align: center;
+	color: white;
+	display: block;
+	float: left;
+}
+/* 图片裁剪样式 */
+.cut-img-box{
+	width: 327px;
+	height: 327px;
+	margin:30px;
+	float: left;
+}
+.cut-img-box-preview{
+	width: 200px;
+	height: 200px;
+	float: left;
+	overflow: hidden;
+	margin:30px;
+	border:1px solid #ccc;
+	border-radius: 100px;
+}
+.input-image{
+	display: block;
+	width:160px;
+	height: 32px;
+	font-size: 15px;
+	background:#e6e6e6;
+	color: black;
+	text-align: center;
+	line-height:  32px;
+	margin-left: 30px;
+	float: left;
+	position: relative;
+}
+.confirm-upload{
+	display: block;
+	width: 160px;
+	height: 32px;
+	font-size: 15px;
+	background: #e6e6e6;
+	color: black;
+	text-align: center;
+	line-height: 32px;
+	float: left;
+	margin-left: 30px;
+}
+.upload-img-box a input{
+	width: 100%;
+	height: 100%;	
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.upload-img-box div a:hover{
+	color: black;
+}
+.upload-img-box div a:focus{
+	color: black;
+}
+/* 子级导航栏样式 */
+.second-nav{
+	width: 100%;
+	height: 60px;
+	background: white;
+	padding:16px 0;
+	box-shadow: 0 2px 8px 0 rgba(133,136,138,.1);
+}
+.nav-list{
+	text-align: center;
+	width: 100%;
+	height: 28px;
+	margin:0px;
+	padding:0px;
+}
+.nav-list li{
+	display: inline-block;
+	height: 28px;
+	font-size: 14px;
+	line-height: 28px;
+}
+.nav-list li a{
+	display: block;
+	height: 100%;
+	margin: 0 30px;
+	color: #222;
+	text-decoration: none;
+}
+.nav-list li a:hover{	
+	color:#c99a05;
+	border-bottom: 2px solid #c99a05;
+}
+.nav-list-remind{
+	border-bottom:2px solid #c99a05;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.clearfix:before,
+.clearfix:after{
+	content:"";
+	display:table;
+
+}
+.clearfix:after{
+	clear:both;
+}

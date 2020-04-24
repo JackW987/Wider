@@ -1,0 +1,124 @@
+a:hover{
+	text-decoration: none;
+}
+a:focus{
+	text-decoration: none;
+}
+.main-box{
+	max-width: 1144px;
+	min-width: 567px;
+	margin:0 auto;
+}
+.tag-box-title{
+	width: 100%;
+	height: 100px;
+	background: url(../../images/border/label-border.png) right no-repeat;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	border-radius: 6px;
+}
+.tag-box-title-logo{
+	color: white;
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    display: block;
+    float: left;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.tag-box-title-text{
+	font-size: 30px;
+    display: block;
+    margin-top: 28px;
+    color: white;
+    float: left;
+    margin-left: 40px;
+}
+.tag-list{
+	width: 100%;
+	margin:0 auto;
+	padding:0px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.tag-list li{
+	width: 276px;
+	margin-right: 10px;
+	display: inline-block;
+	margin-bottom: 24px;
+}
+.tag-list li a{
+	width: 100%;
+	height: 100%;
+}
+.tag-list li a .top-bg{
+	width: 276px;
+	height: 200px;
+	box-sizing: border-box;
+	border:1px solid #f0f0f0;
+}
+.tag-list li a .top-bg img{
+	width: 100%;
+	height: 100%;
+}
+.tag-list li a .middle-box{
+	width: 100%;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 16px;
+	font-size: 16px;
+	background:white;
+	color: black;
+	box-sizing: border-box;
+	border-bottom: 1px solid #f0f0f0;
+	border-left: 1px solid #f0f0f0;
+	border-right: 1px solid #f0f0f0;
+	text-align: left;
+}
+.tag-list li a .bottom-box{
+	width: 100%;
+	padding-left: 16px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	background:white;
+	font-size: 12px;
+	color: black;
+	border-bottom: 1px solid #f0f0f0;
+	border-left: 1px solid #f0f0f0;
+	border-right: 1px solid #f0f0f0;
+	position: relative;
+	text-align: left;
+}
+.tag-list li a .bottom-box span{
+	color: #c99a05;
+    border: 1px solid #c99a05;
+    width: 90px;
+    height: 28px;
+    line-height: 28px;
+	float: right;
+	display: block;
+	text-align: center;
+	position: absolute;
+	top: 11px;
+	right: 20px;
+}
+.tag-load-more{
+	width: 100%;
+}
+.tag-load-more a{
+	width: 60%;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin: 0px auto;
+    border-radius: 20px;
+    color: white;
+    background: #a5a5a5;
+}
+.tag-load-more a:hover{
+	background: #9b9b9b;
+}

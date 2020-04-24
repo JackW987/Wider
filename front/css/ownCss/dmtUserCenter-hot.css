@@ -1,0 +1,289 @@
+body{
+	padding-bottom: 150px;
+}
+.wider-show-hot-banner{
+	width: 960px;
+	margin:0px auto;
+}
+.hot-banner-main-box{
+	width: 640px;
+	float: left;
+	margin-top: 30px;
+	overflow: hidden;
+	position: relative;
+}
+/* 图文样式 */
+.img-txt-atlas{
+	width: 100%;
+	list-style: none;
+	margin:0px;
+	padding:0px;
+	float: left; 
+}
+.img-txt-atlas li{
+	width: 100%;
+	height: 260px;
+	padding:20px;
+	padding-right: 220px;
+	float: left;
+	position: relative;
+	background:white;
+	box-shadow: 0 1px 3px rgba(0,37,55,.05);
+	margin-top: 20px;
+}
+.img-txt-main-img{
+	width: 200px;
+	height: 140px;
+	position: absolute;
+	border-radius:3px;
+	background: url(../../images/usercenter/love-banner/love-2.jpg) center;
+	background-size:120%;
+	right: 10px;
+	top: 60px;
+}
+.img-txt-main-bottom{
+	height: 20px;
+	width: 100%;
+	margin-top: 10px;
+}
+.bottom-label{
+	width: 62px;
+	height: 20px;
+	line-height: 20px;
+	color: #ea6f5a;
+	font-size: 13px;
+	padding:2px 6px;
+	border:1px solid rgba(236,97,73,.7);
+	border-radius:3px;
+}
+.bottom-label:hover{
+	background: #fef7f6;
+	color: #ea6f5a;
+}
+.bottom-label:focus{
+	color: #ea6f5a;
+}
+.bottom-click{
+	margin-left: 10px;
+	color: #b4b4b4;
+}
+.bottom-click:hover{
+	color: #787878;
+}
+.liked{
+	color: red!important;
+}
+.remind-label{
+	margin-top: 20px;
+	font-size: 14px;
+	color: #969696;
+}
+.img-txt-main-author a{
+	float: left;
+	display: block;
+	height: 32px;
+	line-height: 32px;
+	color:black;
+	font-size: 15px;
+}
+.img-txt-main-author a img{
+	display: block;
+	float: left;
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	margin-top: 1px;
+	margin-right: 10px;
+}
+.img-txt-main-title{
+	display: block;
+	width: 100%;
+	height: 27px;
+	line-height: 27px;
+	font-size: 18px;
+	font-weight: 700;
+	margin-top: 10px;
+	color: black;
+}
+
+.img-txt-main-title:hover{
+	text-decoration: underline;
+	color: black;
+}
+.img-txt-main-txt{
+	width: 100%;
+	height: 120px;
+	font-size: 13px;
+	line-height: 24px;
+}
+.usercenter-img-txt-remind{
+	position: absolute;
+	top: 20px;
+	right: 0px;
+	width: 340px;
+}
+/*  个人介绍 */
+.personal-introduction{
+	width: 300px;
+	float: right;
+	margin-top: 30px;
+	background: url(../../images/usercenter/pic/default-bg.png) center!important;
+	height: 300px;
+	position: relative;
+}
+.echarts-bg{
+	position: absolute;
+	width: 300px;
+	height: 240px;
+	top: 50%;
+	left: 50%;
+	margin-top: -120px;
+	margin-left: -150px;
+}
+/* 子级分页 */
+.hot-banner-small-nav{
+	width: 640px;
+	height: 60px;
+	background: white;
+}
+.hot-banner-small-nav div{
+	width: 50%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	line-height: 60px;
+}
+.hot-banner-small-nav div a{
+	height: 100%;
+	font-size: 16px;
+	color: #262626;
+	font-weight: 500;
+	padding:17px 0;
+}
+.nav-btn-active{
+	font-weight: 700!important;
+	border-bottom: 3px solid #ffc81f;
+}
+.wider-show-hot-banner-right-box{
+	width: 300px;
+	float: right;
+}
+.bottom-name-tag{
+	width: 100%;
+	height: 30px;
+	background: #ffc81f;
+	float: left;
+	text-align: center;
+	line-height: 30px;
+	font-size: 14px;
+	color: black;
+}
+.bottom-tip{
+	width: 100%;
+	color: #848484;
+	height: 30px;
+	background: white;
+	float: left;
+	text-align: center;
+	line-height: 30px;
+	font-size: 14px;
+}
+.bottom-tip a{
+	display: inline-block;
+	font-size: 15px;
+	color: black;
+	height: 26px;
+	padding:0px 2px;
+	border-bottom:1px solid #ffc81f;
+	text-align: center;
+}
+.img-txt-atlas{
+	position: absolute;
+	left: 0px;
+	top: 80px;
+	z-index: 2;
+}
+/* 图集样式 */
+.photo-atlas{
+	opacity: 0;
+	position: absolute;
+	left: 0px;
+	top: 80px;
+	width: 100%;
+}
+.item-container{
+	margin:0px auto;
+}
+.photo-atlas-img{
+	width: 220px;
+	margin:5px;
+	background: white;
+	padding:5px 5px 30px 5px;
+}
+.photo-atlas-img img{
+	display: block;
+	width: 100%;
+}
+.photo-atlas-img .bottom-label{
+	position: absolute;
+	left: 5px;
+	bottom: 5px;
+	display: block;
+	width: auto;
+	line-height:15px;
+}
+.photo-atlas-img .time-tag{
+	display: block;
+	width: auto;
+	height: 20px;
+	line-height: 20px;
+	font-size: 13px;
+	line-height: 20px;
+	text-align: center;
+	color: #85888a;
+	bottom: 5px;
+	right: 5px;
+	position: absolute;
+}
+.photo-atlas-img-mask{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	top: 0px;
+	left: 0px;
+	text-align: center;
+	color: white;
+	font-size: 15px;
+	cursor: pointer;
+	opacity: 0;
+}
+.photo-atlas-img-mask span{
+	position: absolute;
+	display: block;
+	top: 50%;
+	left: 50%;
+	margin-top: -11px;
+	margin-left: -45px;
+	color: white;
+}
+.fix-position-box{
+	position: relative;
+}
+
+
+
+
+
+
+
+
+.clearfix:before,
+.clearfix:after{
+	content:"";
+	display:table;
+
+}
+.clearfix:after{
+	clear:both;
+}

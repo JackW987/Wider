@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:wb="http://open.weibo.com/wb" >
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="wb:webmaster" content="f887bcd5d415d3e6" />
+    <meta content="f887bcd5d415d3e6" property="wb:webmaster" />
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>首页</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+	  <link rel="stylesheet" type="text/css" href="css/ownCss/dmtNav.css" />
+    <link rel="stylesheet" type="text/css" href="css/ownCss/dmtHomepage.css" />
+    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/wangEditor.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>	
+   <!-- 导航样式 -->
+<div class="nav">
+      <img src="images/nav/logo.png" class="nav-logo" />
+      <ul class="nav-box-logo clearfix"> 
+        <li>
+          <a href="homepage-special.html">
+            专栏
+          </a>
+        </li>  
+        <li>
+          <a href="homepage-img.html">
+            影像
+          </a>
+        </li>
+        <li>
+          <a href="homepage-imgTxt.html">
+           图文
+          </a>
+        </li>
+        <li>
+          <a href="homepage.html">
+            首页
+          </a>
+        </li>
+      </ul>
+      <ul class="after-login-user clearfix" >
+        <li class="login-user-cancel">
+          <a href="javascript:void(0);" class="fa fa-trash-o"></a>
+        </li>
+        <li>
+          <a href="userCenter.html" class="nav-user-portrait">
+            <div>
+              个人<br/>中心
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0);" class="add-fix-css" >
+            <div class="small-user-banner-btn-decoration all-unreceive-num"></div>
+            <img src="images/nav/email.png" class="email-fix" />
+            <img src="images/nav/ViewGallery.png"  class="small-user-banner-btn" />
+          </a>
+        </li>
+      </ul>
+      <ul class="nav-box-logo nav-login-btn-box nav-fix-1">
+        <li>
+          <a href="javascript:void(0);" class="nav-btn4">
+            登录/注册
+          </a>
+        </li>
+      </ul>
+      <div class="nav-search-box">
+        <a href="javascript:void(0);" class="search-btn">
+          <img src="images/nav/search.png" />
+        </a>
+        <input type="text" placeholder="搜索" />
+      </div>
+    </div>
+    <!-- 弹窗样式 -->
+    <div class="box">
+      <div class="box-preband">
+        <img src="images/nav/logo.png" class="box-logo" />
+        <a href="javascript:void(0);" class="box-close-btn">
+          <img src="images/nav/close-active.png" />
+        </a>
+      </div>
+      <div class="box-afterband">
+        <a href="javascript:void(0);" class="afterband-bottom-span">
+          遇到问题？
+        </a>
+        <div class="boxAfter-register">
+          <a href="javascript:void(0);" class="register-btn">
+            <img src="images/nav/register.png">
+          </a> 
+          <span class="button-register-span">
+            注册
+          </span>
+          <div class="register-move-box">
+
+            <a href="javascript:void(0);" class="register-box-move-left">
+              <img src="images/nav/left.png" />
+            </a>
+              <span class="register-title-text">
+                注册WIDER
+              </span>
+              <div class="change-register-way">
+                <a href="javascript:void(0);">
+                  手机注册
+                </a>
+              </div>
+              <div class="register-fix-1">
+                <input type="text" placeholder="邮箱账号" id="wider-email" class="register-change-input" maxlength="18" />
+                <span class="register-remind-box">
+                  
+                </span>
+              </div>
+              <div>
+                <input type="password" maxlength="18" placeholder="密码" class="register-password-text" />
+                <span class="register-password-remind-box">
+                  
+                </span>
+                <a href="javascript:void(0);" class="password-decoration">
+                  <img src="images/nav/password-hidden.png" />
+                </a>
+              </div>
+              <div class="verification-fixed">
+                <input type="text" placeholder="验证码" maxlength="6" />
+                <a href="javascript:void(0);" class="verification">发送验证码</a>
+                <span class="verification-count">
+                
+                </span>
+              </div> 
+              <a href="javascript:void(0);" class="register-finish-btn">注册</a>   
+            </div>
+        </div>
+        <div class="boxAfter-login">
+          <a href="javascript:void(0);" class="login-btn">
+            <img src="images/nav/logIn.png">
+          </a>
+          <span class="button-login-span">
+            登录
+          </span>
+          <div class="login-move-box">
+              <div class="login-box-other">
+                <span>
+                  第三方登录：
+                </span>
+                  <a href="javascript:void(0);" class="wx-log">
+                  <img src="images/nav/wechat.png" alt="微信登录" />
+                </a>
+                <a href="javascript:void(0);" class="qq-log">
+                  <img src="images/nav/qq.png" alt="QQ登录" />
+                </a>
+                <a href="javascript:void(0);" class="wb-log">
+                  <img src="images/nav/blog.png" alt="微博登录" />
+                </a>
+              </div>
+              <a href="javascript:void(0);" class="login-move-box-right">
+                <img src="images/nav/right.png" />
+              </a>
+              <span class="register-title-text">
+                登录
+              </span>
+              <div class="login-remind-parent">
+                <input type="text" placeholder="邮箱账号/手机账号" class="login-username" />
+                <span class="login-remind-username-box" >
+                  
+                </span>
+              </div>
+              <div class="login-remind-parent">
+                <input type="password" placeholder="密码" class="login-password" />
+                <span class="login-remind-password-box">
+                  
+                </span>
+                <a href="#javascript:;" class="forget-password-btn">
+                  忘记密码
+                </a>
+              </div>
+              <a href="javascript:void(0);" class="login-finish-btn">登录</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 弹窗蒙版 -->
+    <div class="mask">
+      
+    </div>
+    <!-- 小型个人中心 -->
+    <div class="user-banner clearfix">
+      <div class="user-banner-top">
+        <a href="javascript:void(0);" class="user-banner-close">
+          <img src="images/nav/more.png" />
+        </a>
+        <span class="user-banner-title">
+          个人消息
+        </span>  
+        <a href="javascript:void(0);" class="user-banner-top-remove">
+          <span>
+            <img src="images/nav/remove.png" />
+          </span>
+          清除所有消息
+        </a>
+      </div>
+      <div class="user-banner-paging">
+        <div>
+          <a href="javascript:void(0);" class="paging-active private-message-box">
+          <div class="small-user-banner-btn-decoration private-message"></div>
+            私信
+          </a>
+        </div>
+        <div>
+          <a href="javascript:void(0);" class="user-discuss-box">
+          <div class="small-user-banner-btn-decoration user-discuss"></div>
+            评论
+          </a>
+        </div>
+        <div>
+          <a href="javascript:void(0);" class="user-notice-box">
+          <div class="small-user-banner-btn-decoration user-notice"></div>
+            通知
+          </a>
+        </div>
+      </div>
+      <div class="user-banner-letter user-banner-bottom paging-box-active">
+        <a href="javascript:void(0);">
+          <div class="small-user-banner-btn-decoration add-small-user-banner-fix">99999</div>
+          <img src="images/nav/admin.jpg" alt="admin.jpg" class="letter-img">
+          <div class="user-banner-bottom-top">
+            <span class="text-align-right">5月20日</span>
+            <span class="text-align-left">管理员</span>
+          </div>
+          <div class="user-banner-bottom-bottom">
+            你的账号被封了你的账号被封了你的账号被封了你的账号被封了你的账号被封了你的账号被封了
+          </div>
+          <i class="small-nav-li-close fa fa-window-close">
+            
+          </i>
+        </a>
+        <div class="user-banner-fix-bottom">
+
+        </div>
+      </div>
+      <div class="user-banner-comment user-banner-bottom">
+        <a href="javascript:void(0);">
+          <div class="small-user-banner-btn-decoration add-small-user-banner-fix"></div>
+          <img src="images/nav/xsw.jpg" alt="头像" />
+          <div class="comment-user-text">
+            <span class="user-name-text">
+              管理员
+            </span>
+            <span class="comment-user-time-text">
+              5月20日
+            </span>
+          </div>
+          <div class="comment-article">
+            <div class="comment-article-other">
+             <span class="comment-article-other-title">
+               回复我:
+             </span>
+             <span class="comment-article-other-text">
+                测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据
+             </span>
+            </div>
+            <div class="comment-article-myself">
+              <span class="comment-article-myself-title">
+                我的评论:
+              </span>
+              <span class="comment-article-myself-text">
+                测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据
+              </span>
+            </div>
+          </div>
+          <i class="small-nav-li-close fa fa-window-close">
+            
+          </i>
+        </a>
+        <div class="user-banner-fix-bottom">
+          
+        </div>
+      </div>
+      <div class="user-banner-notice user-banner-bottom">
+        <a href="javascript:;">
+          <div class="small-user-banner-btn-decoration add-small-user-banner-fix"></div>
+          <img src="images/nav/notice.jpg">
+          <div class="notice-usermsg-box">
+            <span class="notice-user-span">霸王龙</span>
+            <span class="notice-good-span">赞了你</span>
+            <span class="notice-time-span">5月20日</span>
+          </div>
+          <div class="notice-myself-comment">
+            我是霸王龙我是霸王龙我是霸王龙我是霸王龙我是霸王龙我是霸王龙我是霸王龙我是霸王龙我是霸王龙我是霸王龙我是霸王龙我是霸王龙我是霸王龙我是霸王龙我是霸王龙我是霸王龙我是霸王龙我是霸王龙我是霸王龙我是霸王龙我是霸王龙我是霸王龙我是霸王龙我是霸王龙我是霸王龙我是霸王龙我是霸王龙我是霸王龙我是霸王龙我是霸王龙我是霸王龙
+          </div>
+          <i class="small-nav-li-close fa fa-window-close">
+            
+          </i>
+        </a>
+        <div class="user-banner-fix-bottom">
+          
+        </div>
+      </div>
+    </div>
+    <!-- 在线聊天 -->
+    <div class="online-chat clearfix">
+      <div class="online-chat-text">
+        <ul>
+          <li class="online-chat-text-else clearfix">
+            <a href="javascript:void(0);">
+              <img src="images/nav/admin.jpg" />
+              <i></i>
+            </a>
+            <div>
+              测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容
+            </div>
+          </li>
+          <li class="online-chat-text-myArticle clearfix">
+            <a href="javascript:void(0);">
+              <img src="images/nav/admin.jpg" />
+              <i></i>
+            </a>
+            <div class="clearfix">
+              测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="online-chat-input">
+        <a href="javascirpt:void(0);" class="remove-msg-history">
+          清除历史消息
+        </a>
+        <div class="online-chat-input-decoration-lines">
+            
+        </div>
+        <div id="online-chat-input-text">
+          
+        </div>
+        <a href="javascript:void(0)" class="add-online-chat-1">
+            <span>[热门]我欲乘风破浪,踏遍黄沙海洋</span>
+          </a>
+        <a href="javascript:void(0);" class="add-online-chat-2 send-msg-btn">发送</a>
+      </div>
+    </div>
+    <!-- 评论区功能 -->
+    <div class="alert-area-comment">
+      <div class="alert-area-comment-title clearfix">
+        <a href="javascript:void(0);" class="alert-comment-title-img">
+        </a>
+        <div class="alert-comment-title-text">
+          <div class="alert-comment-title-text-top">
+            夏日苹果汁
+          </div>
+          <div class="alert-comment-title-text-bottom">
+            <a href="javascript:void(0);">
+              <span>
+                分类:
+              </span>
+              热门
+            </a>
+            <a href="javascript:void(0);">
+              <span>
+                作者:
+              </span>
+              黄金二xsw
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="alert-area-comment-bottom">
+        <div class="alert-area-comment-textarea add-alert-area-comment-textarea">
+          <div class="clearfix">
+            <textarea></textarea>
+            <a href="javascript:void(0);">
+              评论
+            </a>
+          </div>
+        </div>
+        <div class="alert-comment-bottom-myself clearfix">
+          <span class="alert-comment-bottom-myself-article">
+            当前评论
+          </span>
+          <div class="alert-comment-myself-line">
+          </div>
+          <div class="alert-comment-myself-text">
+            <img src="images/nav/xsw.jpg" class="alert-comment-myselft-text-img">
+            <a href="javascript:void(0);" class="alert-comment-myself-text-a-1">
+              xsw:
+            </a>
+            &nbsp;&nbsp;测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据
+            <div>
+              <a href="javascript:void(0);" class="alert-comment-myself-text-a-2">
+                我的评论:
+              </a>
+              &nbsp;&nbsp;测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据
+            </div>
+          </div>
+            <div class="alert-comment-myself-text-time">
+                <span class="alert-comment-time-1">
+                  2017年7月6日 14:40
+                </span>
+                <span class="alert-comment-time-2">
+                  <a href="javascript:void(0);" class="comment-reply-btn"> 
+                    回复
+                  </a>
+                  <a href="javascript:void(0);" class="icon-share-fix">
+                    分享
+                  </a>
+                  <a href="javascript:void(0);" class="love-comment-a">
+                    <i class="fa fa-heart love-comment-btn"></i>
+                  </a> 
+                    <span class="love-comment-span">
+                      21
+                    </span>
+                </span>
+            </div>
+        </div>
+        <div class="alert-comment-bottom-myself clearfix">
+          <span class="alert-comment-bottom-myself-article">
+            精彩评论
+          </span>
+          <div class="alert-comment-myself-line">
+          </div>
+          <div class="alert-comment-hot">
+            <div class="alert-comment-myself-text myself-text-fix">
+              <img src="images/nav/admin-1.jpg"  class="alert-comment-myselft-text-img" />
+              <a href="javascript:void(0);">
+                wr:
+              </a>
+              &nbsp;&nbsp;&nbsp;苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃
+        
+            </div>
+            <div class="alert-comment-myself-text-time">
+                <span class="alert-comment-time-1">
+                  2017年7月6日 14:40
+                </span>
+                <span class="alert-comment-time-2">
+                  <a href="javascript:void(0);" class="comment-reply-btn"> 
+                    回复
+                  </a>
+                  <a href="javascript:void(0);" class="icon-share-fix">
+                    分享
+                  </a>
+                  <a href="javascript:void(0);" class="love-comment-a">
+                    <i class="fa fa-heart love-comment-btn"></i>
+                  </a>
+                    <span class="love-comment-span">
+                      21
+                    </span>
+                </span>
+            </div>
+            <div class="alert-area-comment-myself-textarea">
+              <i></i>
+              <div class="clearfix">
+                <textarea></textarea>
+                <a href="javascript:void(0);">
+                  评论
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="alert-comment-hot">
+            <div class="alert-comment-myself-text myself-text-fix">
+              <img src="images/nav/admin-1.jpg"  class="alert-comment-myselft-text-img" />
+              <a href="javascript:void(0);">
+                wr:
+              </a>
+              &nbsp;&nbsp;&nbsp;苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃
+        
+            </div>
+            <div class="alert-comment-myself-text-time">
+                <span class="alert-comment-time-1">
+                  2017年7月6日 14:40
+                </span>
+                <span class="alert-comment-time-2">
+                  <a href="javascript:void(0);" class="comment-reply-btn"> 
+                    回复
+                  </a>
+                  <a href="javascript:void(0);" class="icon-share-fix">
+                    分享
+                  </a>
+                  <a href="javascript:void(0);" class="love-comment-a">
+                    <i class="fa fa-heart love-comment-btn"></i>
+                  </a>
+                    <span class="love-comment-span">
+                      21
+                    </span>    
+                </span>
+            </div>
+            <div class="alert-area-comment-myself-textarea">
+              <i></i>
+              <div class="clearfix">
+                <textarea></textarea>
+                <a href="javascript:void(0);">
+                  评论
+                </a>
+              </div>
+            </div>
+          </div>  
+          <div class="alert-comment-hot">
+            <div class="alert-comment-myself-text myself-text-fix">
+              <img src="images/nav/admin-1.jpg"  class="alert-comment-myselft-text-img" />
+              <a href="javascript:void(0);">
+                wr:
+              </a>
+              &nbsp;&nbsp;&nbsp;苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃
+        
+            </div>
+            <div class="alert-comment-myself-text-time">
+                <span class="alert-comment-time-1">
+                  2017年7月6日 14:40
+                </span>
+                <span class="alert-comment-time-2">
+                  <a href="javascript:void(0);" class="comment-reply-btn"> 
+                    回复
+                  </a>
+                  <a href="javascript:void(0);" class="icon-share-fix">
+                    分享
+                  </a>
+                  <a href="javascript:void(0);" class="love-comment-a">
+                    <i class="fa fa-heart love-comment-btn"></i>
+                  </a>
+                    <span class="love-comment-span">
+                      21
+                    </span>
+                </span>
+            </div>
+            <div class="alert-area-comment-myself-textarea">
+              <i></i>
+              <div class="clearfix">
+                <textarea></textarea>
+                <a href="javascript:void(0);">
+                  评论
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="alert-comment-hot">
+            <div class="alert-comment-myself-text">
+              <img src="images/nav/xsw.jpg" class="alert-comment-myselft-text-img">
+              <a href="javascript:void(0);" class="alert-comment-myself-text-a-1">
+                xsw:
+              </a>
+              &nbsp;&nbsp;测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据
+              <div>
+                <a href="javascript:void(0);" class="alert-comment-myself-text-a-2">
+                  吴睿:
+                </a>
+                &nbsp;&nbsp;测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据
+              </div>
+            </div>
+            <div class="alert-comment-myself-text-time">
+                <span class="alert-comment-time-1">
+                  2017年7月6日 14:40
+                </span>
+                <span class="alert-comment-time-2">
+                  <a href="javascript:void(0);" class="comment-reply-btn"> 
+                    回复
+                  </a>
+                  <a href="javascript:void(0);" class="icon-share-fix">
+                    分享
+                  </a>
+                  <a href="javascript:void(0);" class="love-comment-a">
+                    <i class="fa fa-heart love-comment-btn"></i>
+                  </a>
+                    <span class="love-comment-span">
+                      21
+                    </span> 
+                </span>
+            </div>
+            <div class="alert-area-comment-myself-textarea">
+              <i></i>
+              <div class="clearfix">
+                <textarea></textarea>
+                <a href="javascript:void(0);">
+                  评论
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 分享功能 -->
+    <div class="alert-area-share">
+      <ul>
+        <li>
+          <a href="javascript:void(0);" class="sina-share-btn" target="_blank">
+            <img src="images/nav/blog.png" alt="微博分享" />
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0);" class="douban-share-btn" target="_blank">
+            <img src="images/nav/douban.png" alt="豆瓣分享" />
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)" class="qq-share-btn" target="_blank">
+            <img src="images/nav/qq.png" alt="qq空间分享">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- 点赞提醒功能 -->
+    <div class="alert-area-notice">
+      <div class="alert-area-comment-title clearfix">
+        <a href="javascript:void(0);" class="alert-comment-title-img">
+        </a>
+        <div class="alert-comment-title-text">
+          <div class="alert-comment-title-text-top">
+            夏日苹果汁
+          </div>
+          <div class="alert-comment-title-text-bottom">
+            <a href="javascript:void(0);">
+              <span>
+                分类:
+              </span>
+              热门
+            </a>
+            <a href="javascript:void(0);">
+              <span>
+                作者:
+              </span>
+              黄金二xsw
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="alert-area-comment-bottom">
+        <div class="alert-comment-bottom-myself clearfix">
+          <span class="alert-comment-bottom-myself-article">
+            当前评论
+          </span>
+          <div class="alert-comment-myself-line">
+          </div>
+          <div class="alert-comment-hot">
+            <div class="alert-comment-myself-text myself-text-fix">
+              <img src="images/nav/admin-1.jpg"  class="alert-comment-myselft-text-img" />
+              <a href="javascript:void(0);">
+                wr:
+              </a>
+              &nbsp;&nbsp;&nbsp;测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据
+        
+            </div>
+            <div class="alert-comment-myself-text-time">
+                <span class="alert-comment-time-1">
+                  2017年7月6日 14:40
+                </span>
+                <span class="alert-comment-time-2">
+                  <a href="javascript:void(0);" class="comment-reply-btn"> 
+                    回复
+                  </a>
+                  <a href="javascript:void(0);" class="icon-share-fix">
+                    分享
+                  </a>
+                  <a href="javascript:void(0);" class="love-comment-a">
+                    <i class="fa fa-heart love-comment-btn"></i>
+                  </a>
+                    <span class="love-comment-span">
+                      21
+                    </span>  
+                </span>
+            </div>
+            <div class="alert-area-comment-myself-textarea">
+              <i></i>
+              <div class="clearfix">
+                <textarea></textarea>
+                <a href="javascript:void(0);">
+                  评论
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="alert-comment-bottom-myself clearfix">
+          <span class="alert-comment-bottom-myself-article">
+            精彩评论
+          </span>
+          <div class="alert-comment-myself-line">
+          </div>
+          <div class="alert-comment-hot">
+            <div class="alert-comment-myself-text myself-text-fix">
+              <img src="images/nav/admin-1.jpg"  class="alert-comment-myselft-text-img" />
+              <a href="javascript:void(0);">
+                wr:
+              </a>
+              &nbsp;&nbsp;&nbsp;苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃
+        
+            </div>
+            <div class="alert-comment-myself-text-time">
+                <span class="alert-comment-time-1">
+                  2017年7月6日 14:40
+                </span>
+                <span class="alert-comment-time-2">
+                  <a href="javascript:void(0);" class="comment-reply-btn"> 
+                    回复
+                  </a>
+                  <a href="javascript:void(0);" class="icon-share-fix">
+                    分享
+                  </a>
+                  <a href="javascript:void(0);" class="love-comment-a">
+                    <i class="fa fa-heart love-comment-btn"></i>
+                  </a>
+                    <span class="love-comment-span">
+                      21
+                    </span>
+                </span>
+            </div>
+            <div class="alert-area-comment-myself-textarea">
+              <i></i>
+              <div class="clearfix">
+                <textarea></textarea>
+                <a href="javascript:void(0);">
+                  评论
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="alert-comment-hot">
+            <div class="alert-comment-myself-text myself-text-fix">
+              <img src="images/nav/admin-1.jpg"  class="alert-comment-myselft-text-img" />
+              <a href="javascript:void(0);">
+                wr:
+              </a>
+              &nbsp;&nbsp;&nbsp;苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃
+        
+            </div>
+            <div class="alert-comment-myself-text-time">
+                <span class="alert-comment-time-1">
+                  2017年7月6日 14:40
+                </span>
+                <span class="alert-comment-time-2">
+                  <a href="javascript:void(0);" class="comment-reply-btn"> 
+                    回复
+                  </a>
+                  <a href="javascript:void(0);" class="icon-share-fix">
+                    分享
+                  </a>
+                  <a href="javascript:void(0);" class="love-comment-a">
+                    <i class="fa fa-heart love-comment-btn"></i>
+                  </a>
+                    <span class="love-comment-span">
+                      21
+                    </span>
+                </span>
+            </div>
+            <div class="alert-area-comment-myself-textarea">
+              <i></i>
+              <div class="clearfix">
+                <textarea></textarea>
+                <a href="javascript:void(0);">
+                  评论
+                </a>
+              </div>
+            </div>
+          </div>  
+          <div class="alert-comment-hot">
+            <div class="alert-comment-myself-text myself-text-fix">
+              <img src="images/nav/admin-1.jpg"  class="alert-comment-myselft-text-img" />
+              <a href="javascript:void(0);">
+                wr:
+              </a>
+              &nbsp;&nbsp;&nbsp;苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃苹果汁很好吃
+        
+            </div>
+            <div class="alert-comment-myself-text-time">
+                <span class="alert-comment-time-1">
+                  2017年7月6日 14:40
+                </span>
+                <span class="alert-comment-time-2">
+                  <a href="javascript:void(0);" class="comment-reply-btn"> 
+                    回复
+                  </a>
+                  <a href="javascript:void(0);" class="icon-share-fix">
+                    分享
+                  </a>
+                  <a href="javascript:void(0);" class="love-comment-a">
+                    <i class="fa fa-heart love-comment-btn"></i>
+                  </a>
+                    <span class="love-comment-span">
+                      21
+                    </span>
+                </span>
+            </div>
+            <div class="alert-area-comment-myself-textarea">
+              <i></i>
+              <div class="clearfix">
+                <textarea></textarea>
+                <a href="javascript:void(0);">
+                  评论
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="alert-comment-hot">
+            <div class="alert-comment-myself-text">
+            <img src="images/nav/xsw.jpg" class="alert-comment-myselft-text-img">
+            <a href="javascript:void(0);" class="alert-comment-myself-text-a-1">
+              xsw:
+            </a>
+            &nbsp;&nbsp;测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据
+            <div>
+              <a href="javascript:void(0);" class="alert-comment-myself-text-a-2">
+                我的评论:
+              </a>
+              &nbsp;&nbsp;测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据
+            </div>
+          </div>
+            <div class="alert-comment-myself-text-time">
+                <span class="alert-comment-time-1">
+                  2017年7月6日 14:40
+                </span>
+                <span class="alert-comment-time-2">
+                  <a href="javascript:void(0);" class="comment-reply-btn"> 
+                    回复
+                  </a>
+                  <a href="javascript:void(0);" class="icon-share-fix">
+                    分享
+                  </a>
+                  <a href="javascript:void(0);" class="love-comment-a">
+                    <i class="fa fa-heart love-comment-btn"></i>
+                  </a>
+                    <span class="love-comment-span">
+                      21
+                    </span>  
+                </span>
+            </div>
+          <div class="alert-area-comment-myself-textarea">
+              <i></i>
+              <div class="clearfix">
+              <textarea></textarea>
+              <a href="javascript:void(0);">
+                评论
+              </a>
+          </div>
+          </div>
+          
+          </div>  
+        </div>
+      </div>
+    </div>
+    <!-- 轮播 -->
+    <div class="swiper-container top-roll-banner">
+      <div class="swiper-wrapper top-roll-banner-box">
+        <a href="homepage-special.html" class="swiper-slide">
+          <img src="images/homepage/homepage-lunbo/show-1.jpg" alt="show-1">
+          <span>地图上不可见的山村</span>
+          <span>共投稿78件作品</span>
+        </a>
+        <a href="homepage-special.html" class="swiper-slide">
+          <img src="images/homepage/homepage-lunbo/show-2.jpg" alt="show-2">
+          <span>外国友人与中国乡村</span>
+          <span>共投稿254件作品</span>
+        </a>
+        <a href="homepage-special.html" class="swiper-slide">
+          <img src="images/homepage/homepage-lunbo/show-3.jpg" alt="show-3">
+          <span>十里梨花</span>
+          <span>共投稿124件作品</span>
+        </a>
+        <a href="homepage-special.html" class="swiper-slide">
+          <img src="images/homepage/homepage-lunbo/show-4.jpg" alt="show-4">
+          <span>鬼斧神工的乡村艺术</span>
+          <span>共投稿330件作品</span>
+        </a>
+        <a href="homepage-special.html" class="swiper-slide">
+          <img src="images/homepage/homepage-lunbo/show-5.jpg" alt="show-5">
+          <span>你在远山的另一边</span>
+          <span>共投稿240件作品</span>
+        </a>
+        <a href="homepage-special.html" class="swiper-slide">
+          <img src="images/homepage/homepage-lunbo/show-6.jpg" alt="show-6">
+          <span>古老乡村的建筑艺术</span>
+          <span>共投稿330件作品</span>
+        </a>
+        <a href="homepage-special.html" class="swiper-slide">
+          <img src="images/homepage/homepage-lunbo/show-7.jpg" alt="show-7">
+          <span>无穷碧叶</span>
+          <span>共投稿10件作品</span>
+        </a>
+        <a href="homepage-special.html" class="swiper-slide">
+          <img src="images/homepage/homepage-lunbo/show-8.jpg" alt="show-8">
+          <span>还记得当年田间吹过的风吗</span>
+          <span>共投稿424件作品</span>
+        </a>
+        <a href="homepage-special.html" class="swiper-slide">
+          <img src="images/homepage/homepage-lunbo/show-9.jpg" alt="show-9">
+          <span>古城有人家</span>
+          <span>共投稿102件作品</span>
+        </a>
+        <a href="homepage-special.html" class="swiper-slide">
+          <img src="images/homepage/homepage-lunbo/show-10.jpg" alt="show-10">
+          <span>火烧云</span>
+          <span>共投稿32件作品</span>
+        </a>
+        <a href="homepage-special.html" class="swiper-slide">
+          <img src="images/homepage/homepage-lunbo/show-11.jpg" alt="show-11">
+          <span>城市里不可见的星空</span>
+          <span>共投稿642件作品</span>
+        </a>
+        <a href="homepage-special.html" class="swiper-slide">
+          <img src="images/homepage/homepage-lunbo/show-12.jpg" alt="show-12">
+          <span>一生痴绝处,无梦到徽州</span>
+          <span>共投稿330件作品</span>
+        </a>
+      </div>
+    </div>
+    <div class="child-nav">
+    <a href="javascript:void(0);" class="mini-user-center-btn2">
+      <img src="images/nav/ViewGallery-active.png" alt="迷你用户中心">
+      <div class="small-user-banner-btn-decoration all-unreceive-num">
+        
+      </div>
+    </a>
+      <img src="images/nav/logo-black.png" />
+      <ul>
+        <div class="decoration-bottom-line">
+          
+        </div>
+        <li class="hot-1">
+          <a href="javascript:void(0);">
+            热门
+          </a> 
+        </li>
+        <li class="video-1">
+          <a href="javascript:void(0);">
+            影像
+          </a>
+        </li>
+        <li class="img-txt-1">
+          <a href="javascript:void(0);">
+            图文
+          </a>
+        </li>
+        <li class="particular-1">
+          <a href="javascript:void(0);">
+            专栏
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="container hot-banner">
+      <span class="hot-banner-title">
+        <div class="hot-banner-title-bg">
+          本周精选内容
+        </div>
+      </span>
+      <div class="col-lg-4 hot-banner-1">
+        <div class="hot-video">
+          <div class="hot-img-box img-box-1">
+            <a href="imgTxt-browse.html">
+
+            </a>
+          </div>
+          <div class="hot-txt-box">
+
+            走过了千山万湖，看过了潮起潮落，未曾想到如今像这一杯酸奶低下头，非常醇厚的口感。
+          </div>
+          <div class="hot-author-box">
+            <div class="hot-author-box-head">
+              <img src="images/homepage/homepage-hot-banner/head-3.jpg" alt="head-3">
+            </div>
+            <span class="hot-author-box-middle">
+              Striver
+            </span>
+            <div class="hot-author-box-bottom">
+              <ul>
+                <li>
+                  <a href="javascript:void(0);">
+                    <i class="fa fa-heart love-homepage-btn"></i>
+                  </a>
+                  <span>288</span>
+                </li>
+                <li>
+                  <a href="imgTxt-browse.html">
+                    <i class="fa fa-comment icon-comment-fix"></i>
+                  </a>
+                  <span>307</span>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">
+                    <i class="fa fa-share-square-o icon-share-fix"></i>
+                  </a>
+                  <span>35</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 hot-banner-1">
+        <div class="hot-article">
+          <div class="hot-img-box img-box-2">
+            <a href="imgTxt-browse.html">
+
+            </a>
+          </div>
+          <div class="hot-txt-box">
+            此前，动物入冬藏伏土中，不饮不食，称为“蛰”；到了“惊蛰节”，天上的春雷惊醒蛰居的动物，称为“惊”。故惊蛰时，蛰虫惊醒，天气转暖，渐有春雷，中国大部分地区进入春耕季节。古代分惊蛰为三侯：“一候桃始华；二候仓庚（黄鹂）鸣；三候鹰化为鸠。”惊蛰三候所代表的花信为：“一候桃花，二候杏花，三候蔷薇。”。
+          </div>
+          <div class="hot-author-box">
+            <div class="hot-author-box-head">
+              <img src="images/homepage/homepage-hot-banner/head-2.jpg" alt="head-2" />
+            </div>
+            <span class="hot-author-box-middle">
+              一指无眠
+            </span>
+            <div class="hot-author-box-bottom">
+              <ul>
+                <li>
+                  <a href="javascript:void(0);">
+                    <i class="fa fa-heart love-homepage-btn"></i>
+                  </a>
+                  <span>288</span>
+                </li>
+                <li>
+                  <a href="imgTxt-browse.html">
+                    <i class="fa fa-comment icon-comment-fix"></i>
+                  </a>
+                  <span>307</span>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">
+                    <i class="fa fa-share-square-o icon-share-fix"></i>
+                  </a>
+                  <span>35</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 hot-banner-1">
+        <div class="hot-particular">
+          <div class="hot-img-box img-box-3">
+            <a href="imgTxt-browse.html">
+
+            </a>
+          </div>
+
+          <div class="hot-txt-box">
+            《再别康桥》是现代诗人徐志摩脍炙人口的诗篇，是新月派诗歌的代表作品。全诗以离别康桥时感情起伏为线索，抒发了对康桥依依惜别的深情。语言轻盈柔和，形式精巧圆熟，诗人用虚实相间的手法，描绘了一幅幅流动的画面，构成了一处处美妙的意境，细致入微地将诗人对康桥的爱恋，对往昔生活的憧憬，对眼前的无可奈何的离愁，表现得真挚、浓郁、隽永，是徐志摩诗作中的绝唱。
+          </div>
+          <div class="hot-author-box">
+            <div class="hot-author-box-head">
+              <img src="images/homepage/homepage-hot-banner/head-1.png" alt="head-1" />
+            </div>
+            <span class="hot-author-box-middle">
+              笔落惊风雨
+            </span>
+            <div class="hot-author-box-bottom">
+              <ul>
+                <li>
+                  <a href="javascript:void(0);">
+                    <i class="fa fa-heart love-homepage-btn"></i>
+                  </a>
+                  <span>288</span>
+                </li>
+                <li>
+                  <a href="imgTxt-browse.html">
+                    <i class="fa fa-comment icon-comment-fix"></i>
+                  </a>
+                  <span>307</span>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">
+                    <i class="fa fa-share-square-o icon-share-fix"></i>
+                  </a>
+                  <span>35</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 第二部分 -->
+    <div class="video-banner">
+      <div class="video-banner-title">
+        <span class="video-banenr-title-top">影像圈</span>
+        <div class="video-banner-title-bottom clearfix">
+          <div>
+            
+          </div>
+          <span>
+            share the world with you
+          </span>
+          <div>
+
+          </div>
+        </div>
+      </div>
+      <div class="video-banner-box">
+        <div class="item video-banner-waterfall">
+          <img src="images/homepage/homepage-waterfall/waterfall-small/homepage-waterfall-small-1.jpg"  />
+        </div>
+        <div class="item video-banner-waterfall">
+          <img src="images/homepage/homepage-waterfall/waterfall-small/homepage-waterfall-small-2.jpg"  />
+        </div>
+        <div class="item video-banner-waterfall">
+          <img src="images/homepage/homepage-waterfall/waterfall-small/homepage-waterfall-small-3.jpg"  />
+        </div>
+        <div class="item video-banner-waterfall">
+          <img src="images/homepage/homepage-waterfall/waterfall-small/homepage-waterfall-small-4.jpg"  />
+        </div>
+        <div class="item video-banner-waterfall">
+          <img src="images/homepage/homepage-waterfall/waterfall-small/homepage-waterfall-small-5.jpg"  />
+        </div>
+        <div class="item video-banner-waterfall">
+          <img src="images/homepage/homepage-waterfall/waterfall-small/homepage-waterfall-small-6.jpg"  />
+        </div>
+        <div class="item video-banner-waterfall">
+          <img src="images/homepage/homepage-waterfall/waterfall-small/homepage-waterfall-small-7.jpg"  />
+        </div>
+        <div class="item video-banner-waterfall">
+          <img src="images/homepage/homepage-waterfall/waterfall-small/homepage-waterfall-small-8.jpg"  />
+        </div>
+        <div class="item video-banner-waterfall">
+          <img src="images/homepage/homepage-waterfall/waterfall-small/homepage-waterfall-small-9.jpg"  />
+        </div>
+        <div class="item video-banner-waterfall">
+          <img src="images/homepage/homepage-waterfall/waterfall-small/homepage-waterfall-small-10.jpg"  />
+        </div>
+        <div class="item video-banner-waterfall">
+          <img src="images/homepage/homepage-waterfall/waterfall-small/homepage-waterfall-small-11.jpg"  />
+        </div>
+        <div class="item video-banner-waterfall">
+          <img src="images/homepage/homepage-waterfall/waterfall-small/homepage-waterfall-small-12.jpg"  />
+        </div>
+        <div class="item video-banner-waterfall">
+          <img src="images/homepage/homepage-waterfall/waterfall-small/homepage-waterfall-small-13.jpg"  />
+        </div>
+        <div class="item video-banner-waterfall">
+          <img src="images/homepage/homepage-waterfall/waterfall-small/homepage-waterfall-small-14.jpg"  />
+        </div>
+        <div class="item video-banner-waterfall">
+          <img src="images/homepage/homepage-waterfall/waterfall-small/homepage-waterfall-small-15.jpg"  />
+        </div>
+        <div class="item video-banner-waterfall">
+          <img src="images/homepage/homepage-waterfall/waterfall-small/homepage-waterfall-small-16.jpg"  />
+        </div>
+        <div class="item video-banner-waterfall">
+          <img src="images/homepage/homepage-waterfall/waterfall-small/homepage-waterfall-small-17.jpg"  />
+        </div>
+      </div>
+      <a href="homepage-img.html" class="video-banner-btn">
+        view more
+      </a>
+    </div>
+    <!-- 第三部分 -->
+    <div class="img-txt-banner">
+      <div class="img-txt-banner-box clearfix">
+        <div class="img-txt-banner-box-title clearfix">
+          <div class="response-1">
+            <img src="images/nav/logo-black.png" alt="logo" />
+          </div>   
+          <div class="img-txt-title-line-1">
+            
+          </div>
+          <div class="img-txt-title-title">
+            2017 很高兴遇见你
+          </div>
+          <div class="img-txt-title-line-2">
+            
+          </div>
+        </div>
+        <div class="img-txt-banner-box-img-1">
+          <div class="img-txt-banner-img-border-1">
+            STAND
+          </div>
+          <img src="images/homepage/homepage-img-txt/img-txt-1.jpg" />
+          <span>
+          <div class="img-txt-banner-txt-border-1">
+            
+          </div>
+            <h1>哪里可以遇见你</h1>
+            感谢生活<br/>
+            虽然它如此不完美<br/>
+            如此纷纭<br/>
+            但它真的让我成熟起来<br/>
+            面对它们<br/>
+            我终于会变得坚定并试着微笑<br/>
+            <div class="author-div">—— 朴树</div>      
+          </span>
+        </div>
+        <div class="img-txt-banner-box-img-2">
+          <img src="images/homepage/homepage-img-txt/img-txt-2.jpg">
+          <div class="img-txt-banner-box-img-2-border">
+            
+          </div>
+          <span>
+            <h1>我们曾于此处相识</h1>
+            我们曾经来自五湖四海<br/>
+            因为午后的一盘棋局<br/>
+            我们相聚在此<br/>
+            自此已过了四十年华<br/>
+            自此我们相伴老去<br/>
+            <div class="author-div">
+              —— 阔土
+            </div>
+          </span>
+        </div>
+        <div class="img-txt-banner-box-img-3">
+          <img src="images/homepage/homepage-img-txt/img-txt-3.jpg" alt="img-txt-3" />
+          <span>
+            <div class="img-txt-3-border">
+              
+            </div>
+            <h1>先走的人总是赢家</h1>
+            你说有事要先走<br/>
+            我说没事你走吧<br/>
+            你挥挥手再无音讯<br/>
+            果然<br/>
+            先走的人总是赢家<br/>
+            <div class="author-div">
+              —— 阔土
+            </div>
+          </span>
+        </div>
+        <div class="img-txt-banner-box-img-4">
+          <img src="images/homepage/homepage-img-txt/img-txt-4.jpg" alt="img-txt-4">
+          <div class="img-txt-4-border">
+            
+          </div>
+          <span>
+            <h1>
+              生活如意
+            </h1>
+            小时候<br/>
+            看见蚂蚁不停的搬东西<br/>
+            一看就能看一个下午<br/>
+            长大后<br/>
+            我也活成了一只蚂蚁<br/>
+            <div class="author-div">
+              —— 阔土
+            </div>
+          </span>
+        </div>
+        <div class="img-txt-banner-bottom">
+          <a href="homepage-imgTxt.html">view more</a>
+        </div>
+      </div>
+    </div>
+    <!-- 第四部分 -->
+
+      <div class="particular-banner">
+
+        <div class="particular-bg">
+
+        </div>
+        <div class="particular-banner-mask container">
+          <img src="images/homepage/homepage-particular/particular-img.jpg" alt="专栏板块图片" class="col-sm-7">
+            
+          <div class="col-sm-4 particular-txt"> 
+            <div class="particular-txt-forged-border1">
+              
+            </div>
+            <div class="particular-txt-forged-border2">
+              
+            </div>
+            <span>
+              今日话题
+            </span>
+            <a href="homepage-special.html">take part in the discussion</a>
+            分享一款你在某个乡村喝过的难忘的饮品
+          </div>
+        </div>
+        <div class="index-bottom">
+          Copyright©  2017 V wider 浙ICP备17010867号
+        </div> 
+      </div>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!--web js-->
+    <!-- 微博分享 -->
+    <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+    <!-- homepage js-->
+    <script type="text/javascript" src="js/plug-ins.js"></script>
+    <script type="text/javascript" src="js/idangerous.swiper2.7.6.min.js"></script>
+    <script type="text/javascript" src="js/ownJs/dmtNav.js"></script>
+    <script type="text/javascript" src="js/ownJs/dmtHomepage.js"></script>
+    <script type="text/javascript" src="js/layer-plug/layer.js"></script>
+    <script type="text/javascript" src="js/wangEditor.js"></script>
+  </body>
+</html>
